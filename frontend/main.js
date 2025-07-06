@@ -1,5 +1,25 @@
 window.addEventListener('DOMContentLoaded', (event) => {
     getVisitCount();
+
+    // Close navbar when a nav-link is clicked
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const navbarCollapse = document.getElementById('navbarNav');
+    const navbarToggler = document.querySelector('.navbar-toggler');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (navbarCollapse.classList.contains('show')) {
+                navbarToggler.click(); // Simulate click on toggler to close
+            }
+        });
+    });
+
+    // Close navbar when clicking outside of it
+    document.addEventListener('click', (event) => {
+        if (navbarCollapse.classList.contains('show') && !navbarCollapse.contains(event.target) && !navbarToggler.contains(event.target)) {
+            navbarToggler.click(); // Simulate click on toggler to close
+        }
+    });
 });
 
 
