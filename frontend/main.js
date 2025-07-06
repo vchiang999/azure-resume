@@ -20,6 +20,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
             navbarToggler.click(); // Simulate click on toggler to close
         }
     });
+
+    // Initialize Work Experience Carousel
+    const workCarouselElement = document.getElementById('workCarousel');
+    if (workCarouselElement) {
+        const workCarousel = new bootstrap.Carousel(workCarouselElement);
+    }
 });
 
 
