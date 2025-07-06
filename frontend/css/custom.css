@@ -1,0 +1,33 @@
+/* Add your custom styles here */
+
+#home {
+    background: #1d1d1d;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 2rem;
+}
+
+.social-links a:hover {
+    color: #11ABB0;
+}
+
+#about {
+    padding: 5rem 0;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
