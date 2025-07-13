@@ -1,5 +1,15 @@
 /* Add your custom styles here */
 
+h2.text-center,
+h2.section-title {
+    color: #1e3a8a !important; /* Deep blue for section titles */
+    font-weight: bold;
+}
+
+html {
+    scroll-padding-top: 50px; /* Adjust this value based on your fixed header's height */
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #f8fafc; /* Light gray background */
