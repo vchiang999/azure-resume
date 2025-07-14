@@ -38,7 +38,7 @@
     ================================================== -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
    <link rel="stylesheet" href="css/styles.css">
-   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
    <!-- Script
@@ -52,7 +52,7 @@
 
 </head>
 
-<body>
+<body data-api-url="https://getresumecounterfunctionapp.azurewebsites.net/api/GetResumeCounter?code=jp4rx3wuLEzaXvSFeBKaq08RGiVCwRtpAA1Cdxdc15c9ZGjM79tWjg==">
 
    <!-- Header
    ================================================== -->
@@ -87,6 +87,7 @@
 
    <!-- About Section
    ================================================== -->
+   <main>
    <section id="about" class="py-5">
       <div class="container">
          <div class="row">
@@ -97,7 +98,7 @@
                <h2>ABOUT ME</h2>
                <p>Dynamic and results-driven professional with a proven track record of driving revenue growth and expanding market presence. Known for consistently delivering strategies that enhance company performance, strengthen brand positioning, and unlock new opportunities for sustainable financial success.</p>
                <a href="./resources/Revenue Growth Consultant - English.pdf" class="btn btn-primary mt-3" target="_blank"><i class="fa fa-download"></i> View my CV</a>
-               <div class="row mt-4">
+               <address class="row mt-4">
                   <div class="col-md-6">
                      <h2>Contact Details</h2>
                      <p>
@@ -107,7 +108,7 @@
                         <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/vchiang999/" target="_blank">Connect with me on LinkedIn</a></span>
                      </p>
                   </div>
-               </div>
+               </address>
             </div>
          </div>
       </div>
@@ -118,12 +119,12 @@
    <section id="portfolio" class="py-5 bg-light">
       <div class="container">
          <header class="text-center mb-5 experience-header-box">
-            <h2 class="display-4 text-white">Career Highlights</h2>
+            <h2 class="text-white">Career Highlights</h2>
          </header>
-         <div class="row g-4">
+         <div class="row g-4" id="workCarousel">
             <div class="col-md-4 col-sm-6 col-12">
                <div class="resume-card h-100">
-                  <img src="images/portfolio/2022.10-modernise-data.jpeg" class="card-img-top" alt="Mordernise Your Data Protection">
+                  <img src="images/portfolio/2022.10-modernise-data.jpeg" class="card-img-top" alt="Modernise Your Data Protection">
                   <div class="card-body d-flex flex-column">
                      <h5 class="card-title">Mordernise Your Data Protection</h5>
                      <p class="card-text">Webinar</p>
@@ -157,7 +158,7 @@
                   <div class="card-body d-flex flex-column">
                      <h5 class="card-title">Channel Energy</h5>
                      <p class="card-text">Interview</p>
-                     <a href="#" class="btn btn-primary mt-auto align-self-start" data-bs-toggle="modal" data-bs-target="#modal-01">Details</a>
+                     <a href="#" class="btn btn-primary mt-auto align-self-start" data-bs-toggle="modal" data-bs-target="#modal-01" aria-label="Details about Channel Energy Interview">Details</a>
                   </div>
                </div>
             </div>
@@ -217,7 +218,7 @@
             </div>
             <div class="modal-body">
                <img class="img-fluid mb-3" src="images/portfolio/2019.03-high-performance-cloud-gateway.png" alt="High Performance Cloud Gateway Interview" />
-               <p>I highlighted how the implementation of Cloud Gateway can revolutionize the conventional on-premises storage approach.</p>
+               <p>I highlighted how the implementation of Cloud Gateway can revolutionise the conventional on-premises storage approach.</p>
                <span class="badge bg-secondary">Interview</span>
             </div>
             <div class="modal-footer">
@@ -254,7 +255,7 @@
       <div class="container">
 
         <header class="text-center mb-5 experience-header-box">
-            <h2 class="display-4 text-white">Professional Experience</h2>
+            <h2 class="text-white">Professional Experience</h2>
             <p class="lead text-white opacity-75">A Strategist and Leader in Storage Solutions</p>
         </header>
 
@@ -303,7 +304,7 @@
                            <h5>Building upon my success in the UK, I was entrusted with a new challenge to start our German subsidiary. Leveraging my extensive experience in the UK market, I accomplished remarkable achievements, propelling the company to unprecedented growth and doubling revenue within a single year.</h5>
                            <br>
                            <h4 class="timeline-company-highlight">Synology UK Ltd</h4>
-                           <h5>Managing Director | Milton Keynes, United Kingdom</h5>
+                           <h5>Managing Director <br/> Milton Keynes, United Kingdom</h5>
                            <p class="text-muted">Feb 2008 - Feb 2011 &middot; 3 yrs 1 mo</p>
                            <h5>I undertook a pivotal role in establishing and expanding our presence in the UK market. My primary focus was on driving Sales and Marketing development from its inception. Later expanded to include an RMA centre covering the whole of Europe.</h5>
                         </div>
@@ -317,7 +318,7 @@
         <div class="row mt-5">
             <div class="col-md-12">
                 <h2 class="text-center mb-4 section-title">Core Competencies & Expertise</h2>
-                <div class="row competencies-grid">
+                <div class="competencies-grid">
                     <div class="col-md-4 competency-item">Strategic Business Development</div>
                     <div class="col-md-4 competency-item">International Market Expansion</div>
                     <div class="col-md-4 competency-item">Channel Partner Management</div>
@@ -327,7 +328,7 @@
                     <div class="col-md-4 competency-item">Profit Growth Driver</div>
                     <div class="col-md-4 competency-item">New Opportunity Identification</div>
                     <div class="col-md-4 competency-item">Go-to-Market Strategy</div>
-                    <div class="col-md-4 competency-item">Strategic Planning & Execution</div>
+                    <div class="competency-item">Strategic Planning & Execution</div>
                 </div>
             </div>
         </div>
@@ -335,10 +336,12 @@
       </div>
    </section> <!-- Resume Section End-->
 
+   </section> <!-- Resume Section End-->
+
    <section id="certifications" class="py-5 bg-light">
       <div class="container">
          <header class="text-center mb-5 experience-header-box">
-            <h2 class="display-4 text-white">Certifications</h2>
+            <h2 class="text-white">Certifications</h2>
          </header>
          <div class="row g-4 justify-content-center">
             <div class="col-md-4 col-sm-6 col-12">
@@ -355,7 +358,7 @@
                   <div class="card-body d-flex flex-column">
                      <h3 class="card-title">Microsoft 365 Fundamentals MS-900</h3>
                      <p class="card-subtitle mb-2 text-muted">March 2024</p>
-                     <a href="https://learn.microsoft.com/api/credentials/share/en-gb/vchiang999/7F8AF2430554AAB1?sharingId=35C64DC1F2D28C15" class="btn btn-primary mt-auto align-self-start">View Certificate</a>
+                     <a href="https://learn.microsoft.com/api/credentials/share/en-gb/vchiang999/7F8AF2430554AAB1?sharingId=35C64DC1F2D28C15" class="btn btn-primary mt-auto align-self-start" target="_blank" aria-label="View Microsoft 365 Fundamentals MS-900 Certificate">View Certificate</a>
                   </div>
                </div>
             </div>
@@ -371,6 +374,7 @@
          </div>
       </div>
    </section>
+   </main>
 
 
    <footer class="py-3 bg-dark text-white text-center">
